@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<!--<link href="css/style.css" rel="stylesheet" type="text/css">-->
+    
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div id="wranp">
+		<header>
+			<div class="aaa">
+				<div class="head">
+					<div class="left"></div>
+					<div class="middle">地址选择</div>
+					<div class="right"></div>
+				</div>
+				<div class="sec_search">
+					<div class="input">
+						<img src="img/sou_03.jpg" alt="" />
+						<input type="text" placeholder="输入城市名称"/>
+					</div>
+					<h3>热们城市</h3>
+				</div>
+			</div>
+			
+		</header>
+		<section>
+			<div class="ju">
+				<ul>
+					<li><span>北京</span></li>
+					<li><span>上海</span></li>
+					<li><span>广州</span></li>
+				</ul>
+				<ul>
+					<li><span>山西</span></li>
+					<li><span>山东</span></li>
+					<li><span>河南</span></li>
+				</ul>
+				<ul>
+					<li><span>河北</span></li>
+					<li><span>安微</span></li>
+					<li><span>广西</span></li>
+				</ul>
+			</div>
+
+      <!--显示点击的是哪一个字母-->
+<!-- <div id="showLetter" class="showLetter"><span>A</span></div> -->
+			<div class="letter">
+			    <ul>
+			      <li><a href="javascript:;">A</a></li>
+			      <li><a href="javascript:;">B</a></li>
+			      <li><a href="javascript:;">C</a></li>
+			      <li><a href="javascript:;">D</a></li>
+			      <li><a href="javascript:;">E</a></li>
+			      <li><a href="javascript:;">F</a></li>
+			      <li><a href="javascript:;">G</a></li>
+			      <li><a href="javascript:;">H</a></li>
+			      <li><a href="javascript:;">J</a></li>
+			      <li><a href="javascript:;">K</a></li>
+			      <li><a href="javascript:;">L</a></li>
+			      <li><a href="javascript:;">M</a></li>
+			      <li><a href="javascript:;">N</a></li>
+			      <li><a href="javascript:;">P</a></li>
+			      <li><a href="javascript:;">Q</a></li>
+			      <li><a href="javascript:;">R</a></li>
+			      <li><a href="javascript:;">S</a></li>
+			      <li><a href="javascript:;">T</a></li>
+			      <li><a href="javascript:;">W</a></li>
+			      <li><a href="javascript:;">X</a></li>
+			      <li><a href="javascript:;">Y</a></li>
+			      <li><a href="javascript:;">Z</a></li>
+			    </ul>
+			  </div>
+			
+			
+			<div class="container">
+  <div class="city">
+    <div class="city-list"><span class="city-letter" id="A1">A</span>
+      <p>鞍山市</p>
+      <p>阿拉善盟</p>
+      <p>安庆市</p>
+      <p>安阳市</p>
+      <p>阿里地区</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="B1">B</span>
+      <p>白城市</p>
+      <p>包头市</p>
+      <p>巴彦淖尔市</p>
+      <p>保定市</p>
+      <p>本溪市</p>
+      <p>白山市</p>
+      <p>亳州市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="C1">C</span>
+      <p>长治市</p>
+      <p>沧州市</p>
+      <p>常州市</p>
+      <p>慈溪市</p>
+      <p>常熟市</p>
+      <p>承德市</p>
+      <p>赤峰市</p>
+      <p>长春市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="D1">D</span>
+      <p>大兴安岭地区</p>
+      <p>大同市</p>
+      <p>大庆市</p>
+      <p>丹阳市</p>
+      <p>大连市</p>
+      <p>丹东市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="E1">E</span>
+      <p>鄂尔多斯市</p>
+      <p>鄂州市</p>
+      <p>恩施土家族苗族自治州</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="F1">F</span>
+      <p>阜新市</p>
+      <p>抚顺市</p>
+      <p>福清市</p>
+      <p>阜阳市</p>
+      <p>佛山市</p>
+      <p>防城港市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="G1">G</span>
+      <p>广州市</p>
+      <p>赣州市</p>
+      <p>广元市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="H1">H</span>
+      <p>黑河市</p>
+      <p>葫芦岛市</p>
+      <p>海宁市</p>
+      <p>淮安市</p>
+      <p>衡水市</p>
+      <p>呼和浩特市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="J1">J</span>
+      <p>锦州市</p>
+      <p>金华市</p>
+      <p>晋中市</p>
+      <p>江阴市</p>
+      <p>吉林市</p>
+      <p>佳木斯市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="K1">K</span>
+      <p>昆山市</p>
+      <p>开封市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="L1">L</span>
+      <p>临汾市</p>
+      <p>廊坊市</p>
+      <p>辽阳市</p>
+      <p>辽源市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="M1">M</span>
+      <p>牡丹江市</p>
+      <p>马鞍山市</p>
+      <p>绵阳市</p>
+      <p>眉山市</p>
+      <p>茂名市</p>
+      <p>梅州市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="N1">N</span>
+      <p>南京市</p>
+      <p>宁波市</p>
+      <p>南通市</p>
+      <p>南昌市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="P1">P</span>
+      <p>盘锦市</p>
+      <p>萍乡市</p>
+      <p>平顶山市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="Q1">Q</span>
+      <p>秦皇岛市</p>
+      <p>齐齐哈尔市</p>
+      <p>七台河市</p>
+      <p>泉州市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="R1">R</span>
+      <p>如皋市</p>
+      <p>荣成市</p>
+      <p>日照市</p>
+      <p>日喀则市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="S1">S</span>
+      <p>四平市</p>
+      <p>绥化市</p>
+      <p>松原市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="T1">T</span>
+      <p>太原市</p>
+      <p>铁岭市</p>
+      <p>通化市</p>
+      <p>唐山市</p>
+      <p>太仓市</p>
+      <p>天津市</p>
+      <p>泰州市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="W1">W</span>
+      <p>温州市</p>
+      <p>无锡市</p>
+      <p>乌兰察布市</p>
+      <p>乌海市</p>
+      <p>芜湖市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="X1">X</span>
+      <p>忻州市</p>
+      <p>锡林郭勒盟</p>
+      <p>邢台市</p>
+      <p>兴安盟</p>
+      <p>徐州市</p>
+      <p>新乡市</p>
+      <p>襄阳市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="Y1">Y</span>
+      <p>宜兴市</p>
+      <p>延边朝鲜族自治州</p>
+      <p>扬州市</p>
+      <p>运城市</p>
+      <p>盐城市</p>
+      <p>阳泉市</p>
+      <p>余姚市</p>
+      <p>伊春市</p>
+      <p>营口市</p>
+      <p>烟台市</p>
+    </div>
+    <div class="city-list"><span class="city-letter" id="Z1">Z</span>
+      <p>张家口市</p>
+      <p>诸暨市</p>
+      <p>镇江市</p>
+      <p>张家港市</p>
+      <p>朝阳市</p>
+      <p>张家界市</p>
+      <p>郑州市</p>
+      <p>枣庄市</p>
+      <p>舟山市</p>
+    </div>
+  </div>
+</div>
+
+		</section>
+	</div>
+	
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/city.js"></script>
